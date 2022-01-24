@@ -5,7 +5,7 @@ from .models import UserProfile, Pet
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserProfile
-        fields = ['id', "phone_number"]
+        fields = ['id', 'user_id', "phone_number"]
 class PetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pet
